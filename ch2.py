@@ -1,7 +1,5 @@
-# Sort lexicographically using a simple in-place quicksort
-# Average time complexity: O(nlog(n)); worse case: O(n^2)
-# If we anticipate that inputted words are generally short and inputs contain many words,
-# consider using radix sort instead for O(wn) time.
+# Sort %seq lexicographically based on %order using a simple in-place quicksort
+# Average/best time complexity: O(nlog(n)); worse case: O(n^2)
 def sortLexicographically(seq, order):
 	# Sort using a quicksort algorithm
 	quickSort(seq, 0, len(seq)-1, order)
